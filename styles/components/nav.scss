@@ -1,0 +1,26 @@
+nav {
+    height: $nav-height;
+    box-shadow: 0 3px 7px $primary-color;
+    .title {
+        font-size: 2rem;
+        font-weight: 600;
+        font-family: 'Berkshire';
+        color: $primary-color;
+    }
+    .logo {
+        width: 100%;
+        height: 100%;
+        margin: .3rem;
+    }
+    img {
+        border-radius: 8px;
+    }
+    .link {
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin: .2rem 1.5rem;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}

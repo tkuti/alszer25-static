@@ -1,0 +1,212 @@
+.section {
+  padding: $nav-height 0 4rem 0;
+}
+
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  img {
+    filter: blur(2px) sepia(20%) grayscale(20%);
+  }
+  .info {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-40%, -50%);
+    text-align: center;
+    font-family: 'Berkshire';
+    color: white;
+    .heading {
+      font-size: 6rem;
+      text-shadow: 1px 5px 5px black;
+    }
+    .sub-heading {
+      font-size: 3rem;
+      text-shadow: 3px 3px 3px white;
+    }
+  }
+}
+
+#about {
+  max-width: 600px;
+  text-align: center;
+  line-height: 2rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  h2 {
+    margin: 0.5rem 0 0 0;
+    span {
+      font-family: 'Berkshire';
+      font-size: 2.5rem;
+      text-shadow: 2px 3px 3px #ffdb03;
+    }
+  }
+}
+
+.content {
+  @include flex(column, center, center);
+  padding-bottom: $nav-height;
+}
+
+
+
+#apartmans {
+  @include flex(column, center, center);
+  @include background();
+  h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .apartmans {
+    max-width: 1200px;
+    .additional-info {
+      margin: 1rem;
+      padding: 1rem;
+      box-shadow: 0 0 5px $primary-color;
+      border-radius: 5px;
+      background-color: rgba(white, 0.7);
+      box-shadow: 0 0 5px white;
+    }
+    .cards {
+      @include flex(row, center, flex-start);
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 3rem;
+      .card-box {
+        @include flex(column, center, center);
+        max-width: 500px;
+        margin: 0.5rem 1rem;
+        padding: 1rem;
+        border-radius: 5px;
+        box-shadow: 0 0 5px white;
+        background-color: rgba(white, 0.7);
+        .image-container {
+          position: relative;
+          width: 100%;
+          height: 400px;
+        }
+        .info {
+          h3 {
+            text-align: center;
+            margin: 1rem 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+#galery {
+  @include background();
+  h3 {
+    color: white;
+    text-align: center;
+    margin: 2rem;
+  }
+  .image-container {
+    @include flex(row, center, flex-start);
+    flex-wrap: wrap;
+    gap: 1rem;
+    .image {
+      position: relative;
+      width: 300px;
+      height: 300px;
+      border: 0.5rem solid rgba(white, 0.7);
+      border-radius: 5px;
+      margin: 0.5rem;
+    }
+  }
+}
+
+#prices-booking {
+  .cards {
+    @include flex(row, center, flex-start);
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    .card-box {
+      @include flex(column, center, center);
+      @include background();
+      max-width: 500px;
+      margin: 0.5rem 1rem;
+      padding: 2rem 1rem;
+      border-radius: 5px;
+      box-shadow: 0 0 5px white;
+      color: white;
+      h3 {
+        margin-bottom: 2rem;
+      }
+      .price {
+        font-weight: 800;
+      }
+    }
+  }
+  .booking {
+    padding-top: 2rem;
+  }
+}
+
+#contact {
+  position: relative;
+  width: 100%;
+  @include flex(column, flex-start, center);
+
+  .contact-info {
+    @include flex(row, center, flex-start);
+    flex-wrap: wrap;
+    background-color: rgba(white, 0.8);
+    width: 100%;
+    max-width: 1200px;
+    padding: 1rem;
+    .map {
+      .mapouter {
+        position: relative;
+        text-align: right;
+        height: 450px;
+        width: 400px;
+        .gmap_canvas {
+          overflow: hidden;
+          background: none !important;
+          height: 450px;
+          width: 400px;
+          iframe {
+            height: 450px;
+            width: 400px;
+          }
+        }
+      }
+    }
+    .contact {
+      padding: 0.5rem 0.5rem 0.5rem 2rem;
+    }
+  }
+  .approach-info {
+    background-color: rgba(white, 0.8);
+    width: 100%;
+    max-width: 1200px;
+  }
+}
+
+.sub-heading {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  font-family: 'Berkshire';
+  font-size: 3rem;
+  color: $primary-color;
+  @include flex(row, center, center);
+  &.light {
+    color: white;
+  }
+}
+
+.footer {
+    height: $nav-height;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    @include background();
+    @include flex (row, center, center);
+    color: white;
+}
