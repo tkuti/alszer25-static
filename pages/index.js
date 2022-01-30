@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import About from '../components/about'
+import About from '../components/About'
 import Apartmans from '../components/Apartmans'
 import PricesBooking from '../components/PricesBooking'
 import Galery from '../components/Galery'
@@ -28,7 +28,8 @@ export default function Home() {
           />
           <div className='info'>
             <h1 className='heading'>Alszer25 Vendégház</h1>
-            <h2 className='sub-heading'>- Őriszentpéter - </h2>
+            <h2 className='sub-headin
+            g'>- Őriszentpéter - </h2>
           </div>
         </div>
       </header>
