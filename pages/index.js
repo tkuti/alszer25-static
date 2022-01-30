@@ -28,8 +28,7 @@ export default function Home() {
           />
           <div className='info'>
             <h1 className='heading'>Alszer25 Vendégház</h1>
-            <h2 className='sub-headin
-            g'>- Őriszentpéter - </h2>
+            <h2 className='sub-heading'>- Őriszentpéter - </h2>
           </div>
         </div>
       </header>
