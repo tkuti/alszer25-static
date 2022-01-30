@@ -4,9 +4,25 @@ import Image from 'next/image'
 const About = () => {
   return (
     <section id='about' className='section'>
-      <Image src='/images/sunflower.png' alt='kep1' width={200} height={150} />
-      <h2>Üdvözöljük az <span>Alszer25 Vendégház</span> oldalán!</h2>
-      <Image src='/images/sunflower.png' alt='kep2' width={200} height={150} />
+      <div className='image-container'>
+        <Image
+          src='/images/sunflower.png'
+          alt='kep1'
+          width={200}
+          height={150}
+        />
+      </div>
+      <h2>
+        Üdvözöljük az <span>Alszer25 Vendégház</span> oldalán!
+      </h2>
+      <div className='image-container'>
+        <Image
+          src='/images/sunflower.png'
+          alt='kep2'
+          width={200}
+          height={150}
+        />
+      </div>
       <p className='intro'>
         Szeretne kiszakadni a rohanó hétköznapokból és természetközeli
         környezetben kikapcsolódni, feltöltődni? Szeretne családjával,
